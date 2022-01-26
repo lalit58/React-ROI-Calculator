@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import CompBtn from './CompBtn';
+import CompEnable from './CompEnable';
+import CompHide from './CompHide';
+import CompInput1 from './CompInput1';
+import CompOne from './CompOne';
+import CompROI from './CompROI';
+import CompTier from './CompTier';
+import CompTimeframe from './CompTimeframe';
+import Heading from './Heading';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='body'>
+        <Heading/>
+        <CompOne/>
+        <CompInput1/>
+        <CompBtn/>
+        <CompTimeframe/>
+        <CompEnable/>
+        <CompTier/>
+        <CompROI/>
+        <CompHide/>         
+      </div>
+    </>
+  
   );
 }
 

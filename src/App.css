@@ -1,38 +1,254 @@
-.App {
+.body{
+  flex-direction: center;
+  width: 540px;
+  height: 780px;  
+  padding: 0px 20px;
+  border: 3px solid rgb(214, 205, 205);
+  box-sizing: border-box;
+  border-radius: 17px;
+  align-items: center;
+  margin: auto;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+/* ............................Heading Component ............................*/
+.heading{
+  display: block;
+  font-size: 30px;
+  /* padding: 10px; */
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  left: 0%;
+  position: relative;
+
+}
+.close{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -55%);
+  font-weight: lighter;
+  
+}
+
+  /* ..................................CompOne CSS ..........................*/
+.cake{
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 150px;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  padding: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 22px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* rounded check box */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #e8c32e;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*......................... CompInput1 Css ............................*/
+.input_1st{
+  width: 100%;
+  padding: 20px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  background-color: hsl(0, 24%, 96%);
+  border-radius: 9px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+/* .............................CompBtn CSS   ..............................   */
+.btn{
+  background-color: hsl(0, 24%, 96%); /* Green */
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+.cake-span-btn{
+   position: relative;
+   margin: auto;
+   top: -10px;
+   left: 150px;
+   right: 0;
+   bottom: 0;
+   width: 150px;
+   padding: 50px;
+   font-size: 14px;
+  font-weight:bold;
+  opacity: 45%;
+}
+
+/* .............................CompTimeframe CSS ...........................*/
+.btn-tf{
+  background-color: hsl(0, 24%, 96%); /* Green */
+  border: none;
+  border-radius: 50px;
+  color: black;
+  opacity: 45%;
+  font-weight: bold;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.btn-1{
+  background-color: hsl(56, 72%, 55%); /* Green */
+  border-radius: 50px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+/* .............................CompEnable Css .........................*/
+.enable-switch{
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 210px;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  padding: 10px;
+}
+
+
+/*............................. CompTier CSS ............................*/
+.tier{
+  font-weight: bold;
+  opacity: 50%;
+  font-size: 14px;
+}
+
+/* ............................CompROI CSS ............................*/
+.roi{
+  text-align: right;
+  font-weight: bold;
+  opacity: 55%;
+}
+.input_2nd{
+  width: 100%;
+  padding: 18px 18px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  background-color: hsl(0, 24%, 96%);
+  border-radius: 9px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+.cc00{
+  text-align: right;
+  font-weight: bold;
+  opacity: 55%;
+}
+/* .......................CompHide CSS...................... */
+.hide{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.apy{
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nine{
+  font-family: sans-serif;
+  color: rgb(214, 214, 7);
+  font-size: 25px;
+  position: relative;
+   margin: auto;
+   top: -10px;
+   left: 360px;
+   right: 0;
+   bottom: 0;
+   padding: 50px;
+   font-size: 14px;
+  font-weight:bold;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ul{
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 50%;
+  font-size: 13px;
 }
